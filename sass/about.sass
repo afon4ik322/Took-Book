@@ -1,0 +1,31 @@
+@import _pattern.sass
+
+.about
+    p
+        font-size: 20px
+        margin-top: 90px
+        text-indent: 50px
+    .info
+        text-indent: 0
+    img
+        width: 400px
+        float: right
+
+@media (max-width: 1200px)
+    .about
+        p
+            text-indent: 15px
+            font-size: 16px
+            margin: 30px 30px 0 30px
+        img
+            width: 250px
+@media (max-width:575px)
+    .about
+        img
+            position: relative
+            left: 50%
+            transform: translateX(-50%)
+            float: none
+        p
+            margin-top: 0
+            font-size: 15px

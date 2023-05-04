@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order</title>
+  <link rel="stylesheet" href="css/order.css" />
+  <link rel="icon" href="images/logo1.svg" type="image/svg">.
+  <script src="js/order.js" type="module" defer></script>
+  <script src="js/call.js" type="module" defer> </script>
+</head>
+
+<body>
+  <header>
+    <nav class="computer-menu">
+      <ul>
+        <li><img class="menu-icon" src="images/logo1.svg"></li>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="about.html">О нас</a></li>
+      </ul>
+      <button class="cart">Заказать звонок</button>
+    </nav>
+    <nav class="mobile-menu">
+      <img class="mobile-icon" src="images/logo1.svg">
+      <button class="burger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </button>
+      <ul class="menu-list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><button class="cart-mobile">Заказать звонок</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="overlay">
+    <div id="formContainer">
+      <h2>Заказ звонка</h2>
+      <form id="myform">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <main>
+    <form class="order">
+      <div class="attention">
+      </div>
+      <div>
+        <label for="name">Имя:</label>
+        <input type="text" id="nameInput" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div>
+        <label for="address">Адрес доставки:</label>
+        <input type="text" id="address" name="address" required>
+      </div>
+      <div>
+        <label for="payment">Способ оплаты:</label>
+        <select id="payment" name="payment" required>
+          <option value="">-- Выберите способ оплаты --</option>
+          <option value="card">Кредитная карта</option>
+          <option value="cash">Наличные</option>
+        </select>
+      </div>
+      <div>
+        <label for="comments">Комментарии:</label>
+        <textarea id="comments" name="comments"></textarea>
+      </div>
+      <button type="submit">Оформить заказ</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="divider"></div>
+    <div class="links">
+      <a href="#">Служба поддержки</a>
+      <a href="#">Политика конфеденциальности</a>
+    </div>
+    <h3>Мы в социальных сетях</h3>
+    <div class="social-nets">
+      <a href="https://www.facebook.com"><img src="images/facebook.svg" alt=""></a>
+      <a href="https://www.instagram.com"><img src="images/ig.svg" alt=""></a>
+      <a href="https://www.youtube.com"><img src="images/youtube.svg" alt=""></a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

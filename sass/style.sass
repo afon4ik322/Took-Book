@@ -1,0 +1,92 @@
+@import _pattern.sass
+
+main
+    display: flex
+    margin: 0 auto
+    margin-bottom: 20px
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    width: 1140px
+    .welcome
+        text-align: center
+        margin-top: 100px
+        p
+            font-size: 22px
+
+    h2
+        text-align: center
+    .news1, .news2
+        margin-top: 25px
+        background-color: #f5f5f5
+        padding: 15px 70px 15px 70px
+        p
+            text-indent: 50px
+            font-size: 20px
+            font-weight: 400
+            line-height: 35px
+    .news1
+        img
+            width: 365px
+            display: inline-block
+            float: left
+            transform: translateY(-45px)
+    .news2
+        img
+            width: 400px
+            display: inline-block
+            float: right
+            margin-left: 30px
+        .paragraph1
+            text-align: center
+            text-indent: 10px
+        h2
+            margin-bottom: 50px
+@media (max-width: 1200px)
+    main
+        .welcome
+            p
+                font-size: 20px
+        .news1, .news2
+            p
+                font-size: 18px
+                .news
+            img
+                width: 250px
+                transform: translate(0)
+
+@media (max-width: 767px)
+    main
+        .welcome
+            p
+                font-size: 18px
+                padding: 0 8px
+        .news1, .news2
+            p
+                font-size: 16px
+                .news
+            img
+                width: 200px
+
+@media (max-width: 575px)
+    main
+        .welcome
+            margin-top: 60px
+            p
+                font-size: 16px
+                padding: 0 15px
+        .news1, .news2
+            width: 100vw
+            padding: 0 15px
+            h2
+                font-size: 21px
+            p
+                font-size: 14px
+                text-indent: 10px
+            img
+                width: 200px
+                position: relative
+                left: 50%
+                transform: translateX(-50%)
+                float: none
+                margin: 0
